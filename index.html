@@ -54,8 +54,8 @@
                 <br>
 
                 <label for="maritalStatus">Estado Civil:</label>
-                <select name="maritalStatus">
-                    <option value="notInformed">Selecione...</option>
+                <select name="maritalStatus" required>
+                    <option value="" disabled selected>Selecione...</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
                     <option value="divorciado">Divorciado</option>
@@ -63,8 +63,8 @@
                 </select>
 
                 <label for="userState">UF</label>
-                <select name="userState">
-                    <option value="notInformed">Selecione...</option>
+                <select name="userState" required>
+                    <option value="" disabled selected>Selecione...</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
@@ -93,6 +93,9 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
+
+                <label for="userCity">Cidade</label>
+                <input type="text" id="userCity" required>
             </fieldset>
         
              <button type="submit">Enviar</button>
